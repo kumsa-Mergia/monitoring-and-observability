@@ -1,3 +1,5 @@
+# Why Monitoring? and Why Observability?
+
 ## 🤔 Why Monitoring?
 - Monitoring helps us keep an eye on our systems to ensure they are working properly.
 - Perpose:  maintaining the **health, performance, and security** of IT environments.
