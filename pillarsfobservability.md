@@ -1,4 +1,4 @@
-The three pillars of observability are logs, metrics, and traces. These three data outputs provide different insights into the health and functions of systems in cloud and microservices environments.
+## The three pillars of observability are logs, metrics, and traces. These three data outputs provide different insights into the health and functions of systems in cloud and microservices environments.
 
     1. **Logs** are the archival or historical records of system events and errors, which can be plain text, binary, or structured with metadata.
     2. **Metrics** are numerical measurements of system performance and behavior, such as CPU usage, response time, or error rate.
