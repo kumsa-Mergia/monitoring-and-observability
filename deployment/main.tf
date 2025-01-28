@@ -12,7 +12,6 @@ provider "docker" {
 }
 
 # Define Grafana container
-
 resource "docker_image" "grafana" {
   name = "grafana/grafana:latest"
 }
@@ -32,7 +31,6 @@ resource "docker_container" "grafana" {
   ]
 }
 # Define Prometheus container
-
 resource "docker_image" "prometheus" {
   name = "prom/prometheus:latest"
 }
