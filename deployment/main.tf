@@ -48,3 +48,24 @@ resource "docker_container" "prometheus" {
     "PROMETHEUS_STORAGE_PATH=/prometheus",  # Example environment variable for Prometheus
   ]
 }
+
+
+# Define InfluxDB container
+resource "docker_image" "influxdb" {
+  name = "influxdb:latest"
+}
+
+resource "docker_container" "influxdb" {
+  image = docker_image.influxdb.name
+  name  = "influxdb"
+  ports {
+    internal = 8086
+    external = 8086
+  }
+  restart = "always"
+  env = [
+    "INFLUXDB_ADMIN_USER=kumsa",       # Set InfluxDB admin username
+    "INFLUXDB_ADMIN_PASSWORD=kumsa@1234",  # Set InfluxDB admin password
+    "INFLUXDB_DB=mydb"                      # Set the default database
+  ]
+}
