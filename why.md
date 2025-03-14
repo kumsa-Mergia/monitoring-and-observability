@@ -68,6 +68,7 @@
 - Kubernetes:
     - Complex Observability: Requires sophisticated tools to handle the dynamic and distributed nature of containers and microservices.
     - Integration: Necessitates the integration of multiple observability tools to get a complete picture of the system.
+    - 
 
 ## ⚒️ What are the Tools Available?
 - **Monitoring Tools**: Prometheus, Grafana, Nagios, Zabbix, PRTG.
